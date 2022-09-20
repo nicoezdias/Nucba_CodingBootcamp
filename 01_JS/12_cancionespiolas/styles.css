@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #121221;
+  color: #fff;
+}
+button {
+  cursor: pointer;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+
+header {
+  background-image: url('https://images.unsplash.com/photo-1582751836565-74f64cc184cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 100px;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header * {
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0 0 30px;
+}
+
+form {
+  position: relative;
+  width: 50%;
+  max-width: 100%;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #121221 inset;
+  transition: background-color 1000s ease-in-out 0s;
+}
+
+form input[type='text'] {
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 100%;
+  background-color: #121221;
+  color: #fff;
+}
+
+form button {
+  border: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
+  color: #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 30px;
+}
+
+form button:hover {
+  background-position: right center;
+}
+
+.btn {
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
+  color: #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 8px 8px;
+}
+
+.container {
+  margin: 30px auto;
+  width: 100%;
+  width: 500px;
+}
+.container h2 {
+  font-weight: 600;
+}
+
+.container p {
+  text-align: center;
+}
+
+.container button {
+  transform: scale(1.3);
+  margin: 15px;
+}
+ul.songs {
+  list-style: none;
+  padding: 0;
+}
+
+ul.songs li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
